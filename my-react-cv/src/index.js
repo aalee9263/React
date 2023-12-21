@@ -1,25 +1,41 @@
 import react from 'react';
 import reactDOM from 'react-dom';
+// import "./index.css"
 
-let myNumber = 24
- 
-function Hi (){
-  return <div>Hello <strong>Arshad!</strong>
+
+
+const App = () => {
+
+  return (
+
+    <div>
+  
+      <nav> 
+        <div className='logo'> 
+          <img src="./images/logo-nike.png" alt='logo'></img>
+        </div>
+        <ul>
+          <li href="#">Menu</li>
+          <li href="#">Location</li>
+          <li href="#">About</li>
+          <li href="#">Contact</li>
+        </ul>
+      
+      <button>Login</button>
+      
+      </nav>
   
   
+    </div>
   
-  </div>
+  ) 
 }
 
-          <div className='items'>abc items
-          <li>
-            <ul>items number 1</ul>
-            <ul>items number 2</ul>
-            <ul>items number 3</ul>
-            <ul>items number 4</ul>
-            <ul>items number {myNumber + 34}</ul>
 
-          </li>
-          </div>
 
-reactDOM.render(<Hi/>, document.querySelector('#root'));
+
+
+
+
+
+reactDOM.render(<App/>, document.querySelector('#root'));
